@@ -227,3 +227,94 @@
     border-radius:6px;
     font-size:14px;
   }
+
+.footer {
+  background: #f5f5f5;
+  padding: 120px 20px 40px;
+  text-align: center;
+}
+
+/* contenido principal */
+.footer-content h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.footer-content p {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* links */
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* hover elegante */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #ff5c5c;
+  left: 0;
+  bottom: -5px;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff5c5c;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+/* parte inferior */
+.footer-bottom {
+  margin-top: 80px;
+  font-size: 14px;
+  color: #999;
+}
+
+  .footer {
+  background: #f2efe9;
+  border-top: 1px solid #e5e5e5;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-info {
+    max-width: 100%;
+  }
+
+  .project-image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+}
