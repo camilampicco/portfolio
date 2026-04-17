@@ -168,11 +168,23 @@
   
   /* IMAGE */
   
-  .project-image img{
+  .project-image{
+    flex: 0 0 320px;
     width: 320px;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    border-radius: 18px;
+  }
+
+  .project-image--square{
+    aspect-ratio: 1 / 1;
+  }
+
+  .project-image img{
+    display: block;
+    width: 100%;
     height: 100%;
     object-fit: contain;
-    aspect-ratio: 16 / 10;
   }
   
   
@@ -319,6 +331,65 @@
   max-width: 500px;
 }
 
+/* TOOLS */
+.tools-section{
+  margin-top: 48px;
+}
+
+.tools-section h2{
+  font-size: 22px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.tools-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  max-width: 620px;
+}
+
+.tool-card{
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 62px;
+}
+
+.tool-icon{
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.04);
+  color: #333;
+  flex: 0 0 38px;
+}
+
+.tool-icon svg{
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+.tool-icon svg[viewBox="0 0 128 128"]{
+  width: 24px;
+  height: 24px;
+}
+
+.tool-name{
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+}
+
 nav a {
   text-decoration: none;
 }
@@ -366,6 +437,13 @@ nav a {
     object-fit: contain;
   }
 
+  .project-image {
+    width: 100%;
+    flex-basis: auto;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
   /* ABOUT SECTION */
   .about-container {
     grid-template-columns: 1fr;
@@ -380,5 +458,10 @@ nav a {
 
   .about-text h1 {
     font-size: 36px;
+  }
+
+  .tools-grid{
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
