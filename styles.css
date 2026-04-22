@@ -626,7 +626,6 @@ nav a {
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
   nav {
     padding: 20px;
   }
@@ -637,7 +636,6 @@ nav a {
     font-size: 14px;
   }
 
-  /* HERO */
   .hero h1 {
     font-size: 48px;
   }
@@ -647,7 +645,6 @@ nav a {
     padding: 0 20px;
   }
 
-  /* WORK / PROJECT CARDS */
   .project-card {
     flex-direction: column;
     text-align: center;
@@ -670,7 +667,6 @@ nav a {
     margin: 0 auto;
   }
 
-  /* CASE STUDY */
   .case-hero{
     padding: 80px 20px 64px;
   }
@@ -701,12 +697,10 @@ nav a {
     text-align: left;
   }
 
-  /* ABOUT SECTION */
   .about-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
 
   .about-text h1 {
     font-size: 36px;
@@ -715,6 +709,21 @@ nav a {
   .tools-grid{
     max-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .case-metrics {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tools-section-wrap {
+  padding: 0;
+  }
+
+  .case-section,
+  .case-hero,
+  .about {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
