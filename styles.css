@@ -732,3 +732,93 @@ nav a {
   margin: 0 auto;
   padding: 0 0 0 calc(100% / 2.2); /* aligns with the text column */
 }
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-dropdown-toggle::after {
+  content: '▾';
+  font-size: 0.75em;
+  transition: transform 0.25s ease;
+  display: inline-block;
+}
+
+.nav-dropdown:hover .nav-dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+/* el wrapper transparente cubre el gap para que el hover no se corte */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 12px;
+  min-width: 230px;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* el visual va en el inner */
+.dropdown-menu-inner {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 8px 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 18px;
+  color: #222;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 400;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+  background: #f5f5f5;
+}
+
+.dropdown-menu .dropdown-tag {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: #999;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.dropdown-menu a + a {
+  border-top: 1px solid #f0f0f0;
+}
