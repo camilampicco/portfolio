@@ -725,6 +725,15 @@ nav a {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .nav-dropdown.open .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-dropdown.open .nav-dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
 }
 
 .tools-section-wrap {

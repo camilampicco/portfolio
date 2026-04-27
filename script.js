@@ -1,26 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Scroll arrow
+
+  // Scroll arrow (solo existe en index)
   const arrow = document.getElementById("scrollArrow");
-  arrow.addEventListener("click", () => {
-    document.getElementById("work").scrollIntoView({ behavior: "smooth" });
+  if (arrow) {
+    arrow.addEventListener("click", () => {
+      document.getElementById("work").scrollIntoView({ behavior: "smooth" });
+    });
+  }
+
+  // Dropdown: hover en desktop, tap en mobile
+  const dropdowns = document.querySelectorAll('.nav-dropdown');
+
+  dropdowns.forEach(dropdown => {
+    const toggle = dropdown.querySelector('.nav-dropdown-toggle');
+
+    toggle.addEventListener('click', function () {
+      const isOpen = dropdown.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
   });
 
-  // Mobile only: toggle on tap (desktop uses CSS :hover)
-  const workDropdown = document.getElementById('workDropdown');
-  const workToggle   = document.getElementById('workToggle');
-
-  workToggle.addEventListener('click', function (e) {
-    if (window.matchMedia('(hover: none)').matches) {
-      e.preventDefault();
-      const isOpen = workDropdown.classList.toggle('open');
-      workToggle.setAttribute('aria-expanded', isOpen);
-    }
-  });
-
+  // Cierra al tocar fuera
   document.addEventListener('click', function (e) {
-    if (!workDropdown.contains(e.target)) {
-      workDropdown.classList.remove('open');
-      workToggle.setAttribute('aria-expanded', 'false');
-    }
+    dropdowns.forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+        dropdown.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
+      }
+    });
   });
+
 });
