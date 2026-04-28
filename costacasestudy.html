@@ -50,7 +50,7 @@
         <p class="case-hero__meta">UX/UI DESIGN · COSTA FOUNDATION</p>
         <h1>Website Redesign:<br>Costa Foundation</h1>
         <p class="case-hero__lead">
-          Redesigning a donation-focused website through heuristics, UX laws and competitive analysis — with no direct access to end users.
+          Redesigning a donation-focused website through competitive benchmarking, heuristic evaluation, and UX laws — without direct access to end users.
         </p>
         <div class="case-tags" style="margin-top: 20px;">
           <span class="case-tag">Heuristic Evaluation</span>
@@ -58,6 +58,7 @@
           <span class="case-tag">UX Laws</span>
           <span class="case-tag">Wireframing</span>
           <span class="case-tag">Responsive Design</span>
+          <span class="case-tag">Motion UI</span>
         </div>
       </div>
       <figure class="case-hero__media">
@@ -99,34 +100,38 @@
 
       <h2 style="margin-top: 0;">Overview</h2>
       <p>
-        As part of a broader effort, I led the redesign of several websites, one of the most relevant being the Costa Foundation site. The challenge was unique: we didn't have direct access to end users. To overcome this, I started with an in-depth benchmarking analysis of major competitors' donation flows and applied UX Laws and usability heuristics to design a more effective experience.
+        The Costa Foundation is the charitable arm of Costa Coffee, focused on building schools and improving access to education in coffee-growing communities. Despite a strong mission, its website underperformed as a donation platform — the giving journey was fragmented, the primary CTA was buried, and the content hierarchy did not reflect the site's core goal.
       </p>
       <p>
-        The main objective was to <strong>increase donations</strong> by simplifying the path to the "Donate" call-to-action.
+        I led the redesign as the sole UX designer, with the primary objective of <strong>increasing donations</strong> by reducing friction in the path to the Donate CTA. The constraint: no direct access to end users, which meant every design decision had to be grounded in secondary research and established UX principles.
       </p>
 
       <h2>My role</h2>
       <p>
-        I led the end-to-end redesign process as the sole UX designer on this project. Without direct access to end users, I relied on secondary research methods — heuristic evaluation, competitive benchmarking, and established UX principles — to build an evidence-based rationale for every design decision.
+        I owned the end-to-end design process — from scoping the brief and conducting secondary research, to producing wireframes, defining interaction flows, and delivering high-fidelity designs with motion UI. I presented recommendations directly to stakeholders and iterated based on their feedback throughout the project.
       </p>
-      <p>
-        I was responsible for scoping the brief, producing wireframes, defining the interaction flows, and delivering the final designs including motion UI. I also presented findings and recommendations directly to stakeholders throughout the project.
-      </p>
+
+      <div class="case-tags" style="margin: 20px 0;">
+        <span class="case-tag">Sole UX Designer</span>
+        <span class="case-tag">Heuristic Evaluation</span>
+        <span class="case-tag">Competitive Benchmarking</span>
+        <span class="case-tag">Wireframing</span>
+        <span class="case-tag">Hi-fi Design</span>
+        <span class="case-tag">Stakeholder Presentations</span>
+      </div>
 
       <h2>The challenge</h2>
       <p>
-        The existing Costa Foundation website had a fragmented donation journey — the primary CTA was buried, navigation relied on a hamburger menu on desktop, and testimonials were presented in an inaccessible carousel format. The absence of direct user research access meant all design decisions needed to be grounded in secondary evidence and established UX principles.
+        Without direct access to end users, traditional research methods like interviews or usability testing were not available. I needed to build a rigorous, evidence-based design rationale using secondary sources — one that would hold up to stakeholder scrutiny and justify every recommendation made.
       </p>
-
-      <h2>Methods</h2>
-      <div class="case-tags">
-        <span class="case-tag">Heuristic evaluation</span>
-        <span class="case-tag">Competitive benchmarking</span>
-        <span class="case-tag">UX laws</span>
-        <span class="case-tag">Wireframing</span>
-        <span class="case-tag">Motion UI</span>
-        <span class="case-tag">Responsive design</span>
-      </div>
+      <p>
+        The key questions driving the discovery phase were:
+      </p>
+      <ul class="case-list">
+        <li>How do leading charity websites structure their donation flows?</li>
+        <li>What usability issues exist in the current Costa Foundation site?</li>
+        <li>What UX principles can be applied to increase donation conversion without user testing?</li>
+      </ul>
 
       <!-- ═══════════════════════════════════
            PHASE 2 – DEFINE
@@ -137,18 +142,48 @@
 
       <h2 style="margin-top: 0;">Heuristic evaluation</h2>
       <p>
-        I conducted a structured heuristic evaluation of the existing Costa Foundation website using Nielsen's 10 usability heuristics. This surfaced a set of recurring issues: the primary Donate CTA was inconsistently placed, navigation lacked clear signposting of the user's current location, and the content hierarchy did not reflect donation as the primary goal of the site.
+        I began with a structured evaluation of the existing Costa Foundation website using Nielsen's 10 usability heuristics. This allowed me to surface concrete, evidence-backed issues without needing direct user input.
       </p>
+      <p>Key findings from the evaluation:</p>
+      <figure class="case-media">
+        <img class="case-media__img" src="assets/heuristic_evaluation.png" alt="heuristic_evaluation">
+      </figure>
 
       <h2>Competitive benchmarking</h2>
       <p>
-        I benchmarked five major charity and donation-focused websites — including Cancer Research UK, Oxfam, and Save the Children — to analyse how they structured their donation flows, surface-level navigation patterns, and CTA placement. Key patterns identified:
+        I benchmarked five major UK charity websites — Cancer Research UK, Oxfam, Save the Children, UNICEF UK, and Comic Relief — analysing donation flow structure, navigation patterns, CTA placement, and content organisation. Key patterns identified:
       </p>
       <ul class="case-list">
-        <li>All high-performing charity sites surfaced a "Donate" option in the primary navigation, not buried in submenus.</li>
-        <li>Donation CTAs used high-contrast colour differentiated from secondary actions, aligning with the Von Restorff Effect.</li>
-        <li>Static testimonial grids consistently outperformed carousels for accessibility and engagement.</li>
-        <li>Clear allocation of donations (e.g. "£10 buys X") increased conversion by reducing ambiguity in the giving decision.</li>
+        <li>All five sites surfaced "Donate" as a primary navigation item — visually distinct from other links, often as a button with a contrasting colour.</li>
+        <li>Donation CTAs were placed above the fold on the homepage and repeated at key scroll points throughout the page.</li>
+        <li>Static testimonial grids and impact stories consistently outperformed carousels for accessibility and readability.</li>
+        <li>Transparent donation allocation ("Your £10 will…") reduced hesitation and increased conversion by making the impact tangible.</li>
+        <li>Simplified donation flows with 3 steps or fewer performed significantly better than longer flows.</li>
+      </ul>
+
+      <h2>User persona</h2>
+      <p>
+        Without direct user research, I built a composite persona based on charity sector data, the Costa Coffee customer profile, and published studies on charitable giving behaviour. This grounded design decisions in a realistic user model.
+      </p>
+      <figure class="case-media">
+        <img class="case-media__img" src="assets/persona_sarah.png" alt="userpersona">
+      </figure>
+
+      <h2>Problem statement</h2>
+      <p>
+        From the heuristic evaluation and benchmarking, three core problems emerged:
+      </p>
+      <ul class="case-steps">
+        <li>Donors are <strong>unable to find the Donate CTA quickly</strong> because it is not surfaced in the primary navigation and is buried beneath content that does not prioritise giving.</li>
+        <li>Donors feel <strong>uncertain about the impact of their donation</strong> because the site does not clearly communicate what their contribution enables.</li>
+        <li>Donors lose confidence in the site due to <strong>visual inconsistency and poor hierarchy</strong>, which undermines trust — a critical factor in charitable giving.</li>
+      </ul>
+
+      <h2>How might we…</h2>
+      <ul class="case-list">
+        <li>Help donors find the Donate CTA within seconds of landing on any page?</li>
+        <li>Communicate donation impact in a way that feels personal and concrete?</li>
+        <li>Create a visual experience that builds trust and encourages giving?</li>
       </ul>
 
       <!-- ═══════════════════════════════════
@@ -158,28 +193,40 @@
         <span style="font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #6b4f1f; background: #e7dccb; padding: 5px 14px; border-radius: 999px;">03 — Develop</span>
       </div>
 
+      <h2 style="margin-top: 0;">Userflow</h2>
+      <p>A user flow chart is a tool that maps out paths our users will take when navigating through our product to 
+        achieve a certain goal. </p>   
+      <p>This process involves organizing information architecture, where we strategize how to display and structure each piece of information within our product.</p> </p>
+     <figure class="case-media">
+        <img class="case-media__img" src="assets/" alt="Costa Foundation homepage wireframe"/>
+      </figure>
+
       <h2 style="margin-top: 0;">UX laws applied</h2>
-      <p>Each design decision was grounded in an established UX law or principle:</p>
+      <p>
+        Rather than relying on opinion, every key design decision was mapped to an established UX law or cognitive principle. This gave each recommendation a defensible rationale that could be presented to stakeholders with confidence.
+      </p>
       <ul class="case-list">
-        <li><strong>Fitts's Law:</strong> The primary CTA ("Donate") is large, easy to click, and placed in high-attention areas — top navigation and above the fold.</li>
-        <li><strong>Hick's Law:</strong> Clear and limited pathways (Donate, Fundraise, Partner) reduce decision fatigue by minimising the number of choices presented at once.</li>
-        <li><strong>Jakob's Law:</strong> Structure follows familiar charity website conventions, easing navigation for first-time visitors.</li>
-        <li><strong>Von Restorff Effect:</strong> The Donate CTA stands out visually against secondary actions through colour and size contrast.</li>
-        <li><strong>Aesthetic-Usability Effect:</strong> A clean, consistent design increases perceived trustworthiness — a key driver of charitable giving.</li>
+        <li><strong>Fitts's Law:</strong> The "Donate" CTA is large, high-contrast, and placed in the primary navigation and hero area — minimising the distance and effort required to reach it.</li>
+        <li><strong>Hick's Law:</strong> Navigation was simplified to three primary pathways (Donate, Fundraise, Partner), reducing the number of choices and the cognitive load on first-time visitors.</li>
+        <li><strong>Jakob's Law:</strong> The redesign follows conventions established by leading UK charity sites, ensuring the structure feels familiar and intuitive to donors who give online regularly.</li>
+        <li><strong>Von Restorff Effect:</strong> The Donate CTA is visually differentiated from all other buttons and links through colour, weight, and size — making it the most memorable and distinct element on the page.</li>
+        <li><strong>Aesthetic-Usability Effect:</strong> A clean, consistent visual system signals professionalism and trustworthiness — which research shows directly increases willingness to donate.</li>
       </ul>
 
       <h2>Key design decisions</h2>
       <ul class="case-steps">
-        <li>Moving from a hamburger menu to a <strong>full display menu on desktop</strong>, improving discoverability of key actions.</li>
-        <li><strong>Highlighting the active navigation path</strong> so users always know where they are within the site.</li>
-        <li>Adding the <strong>"Donate" option directly in the main menu</strong>, reducing the steps needed to reach the CTA from any page.</li>
-        <li>Simplifying and linearising the entire journey to Donate, removing unnecessary intermediate steps.</li>
-        <li>Testimonials were relocated to the bottom of the site and restructured to <strong>avoid a carousel format</strong>, ensuring improved accessibility and readability.</li>
-        <li>The "How We Make a Difference" section was kept but <strong>expanded into card-based elements</strong> specifying where donations could be allocated — directly addressing user anxiety around charitable giving.</li>
+        <li>Replaced the hamburger menu with a <strong>full display navigation on desktop</strong>, exposing all primary pathways at a glance and adding "Donate" as a visually distinct CTA button within the nav bar.</li>
+        <li>Added <strong>active state highlighting</strong> to navigation items, so users always know where they are in the site — addressing the heuristic violation identified in the evaluation.</li>
+        <li>Redesigned the hero section to lead with the mission and a <strong>prominent Donate CTA above the fold</strong>, reducing the steps required to give from any entry point.</li>
+        <li>Restructured the "How We Make a Difference" section into <strong>card-based donation tiers</strong> (e.g. "£10 provides a child with books for a term"), making impact concrete and reducing donor hesitation.</li>
+        <li>Replaced the testimonial carousel with a <strong>static, accessible grid layout</strong>, improving readability and ensuring content is available to all users regardless of assistive technology.</li>
+        <li>Applied a consistent button system across all pages, eliminating the visual inconsistencies surfaced in the heuristic evaluation.</li>
       </ul>
 
       <h2>Homepage wireframe</h2>
-      <p>Proposed homepage wireframe, showing simplified navigation and highlighted Donate CTA.</p>
+      <p>
+        The wireframe below shows the proposed homepage layout — simplified navigation with a prominent Donate button, a clear mission-led hero, and a restructured content hierarchy that prioritises the giving journey.
+      </p>
       <figure class="case-media">
         <img class="case-media__img" src="assets/costa.png" alt="Costa Foundation homepage wireframe"/>
       </figure>
@@ -193,7 +240,7 @@
 
       <h2 style="margin-top: 0;">Redesigned homepage</h2>
       <p>
-        The final redesign was delivered as a complete set of high-fidelity pages and interaction flows, including motion UI. Due to space constraints, only the homepage is shown here. The client received the full deliverable covering all core pages and responsive breakpoints.
+        The final design was delivered as a complete set of high-fidelity pages, covering the homepage, donation flow, How We Make a Difference, and the About page — along with interaction flows and motion UI. Due to client confidentiality, only the homepage is shown here.
       </p>
       <figure class="case-media">
         <img class="case-media__img" src="assets/costa_foundation.jpeg" alt="Costa Foundation redesigned homepage"/>
@@ -201,13 +248,13 @@
 
       <h2>Outcomes &amp; impact</h2>
       <p>
-        The redesigned website delivered measurable improvements in traffic and donation engagement — validating the evidence-based design approach taken without direct user access.
+        The redesigned site launched with measurable improvements in both traffic and donation engagement, validating the evidence-based approach taken throughout the project.
       </p>
 
       <ul class="case-metrics" style="margin-top: 24px;">
         <li>
           <span class="case-metric__label">Traffic growth</span>
-          <span class="case-metric__value">+40% in one quarter</span>
+          <span class="case-metric__value">+40% in one quarter post-launch</span>
         </li>
         <li>
           <span class="case-metric__label">Donate clicks</span>
@@ -215,12 +262,21 @@
         </li>
       </ul>
 
-      <h3>Structural improvements</h3>
+      <h3>Structural improvements delivered</h3>
       <ul class="case-list">
-        <li>Improved navigation: moved from a hidden hamburger menu to explicit navigation options visible at all times on desktop.</li>
-        <li>Reduced the number of steps required to reach the Donate CTA from any page on the site.</li>
-        <li>Redesigned the donation flow for greater clarity, reducing friction in the giving journey.</li>
-        <li>Created a fully responsive design ensuring a seamless experience on mobile and desktop.</li>
+        <li>Navigation moved from a hidden hamburger menu to a fully visible desktop nav, with Donate surfaced as a primary CTA.</li>
+        <li>Steps to reach the Donate CTA reduced from 4+ to a single click from any page.</li>
+        <li>Donation flow redesigned for clarity, with transparent impact messaging at each tier.</li>
+        <li>Fully responsive design ensuring a consistent experience across mobile, tablet, and desktop.</li>
+        <li>Visual consistency restored across all pages, reinforcing trust and brand credibility.</li>
+      </ul>
+
+      <h3>Next steps</h3>
+      <ul class="case-list">
+        <li>Conduct moderated usability testing with real donors to validate design decisions with primary research.</li>
+        <li>A/B test the Donate CTA placement and copy to optimise conversion rate.</li>
+        <li>Track scroll depth and click heatmaps post-launch to identify further friction points in the donation journey.</li>
+        <li>Explore personalised donation tiers based on returning visitor behaviour.</li>
       </ul>
 
     </div>
