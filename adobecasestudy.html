@@ -47,7 +47,8 @@
         <h1>UX research &amp; usability testing for data migration</h1>
         <p class="case-hero__meta">UX RESEARCH · ADOBE</p>
         <p class="case-hero__lead">
-          Redesigning partner management through user research, usability testing, and iterative design.
+        Redesigning partner management through iterative UX research and usability testing — from identifying critical 
+        failures to implementing changes that measurably improved task completion, efficiency, and partner confidence.
         </p>
       </div>
 
@@ -63,8 +64,26 @@
     <div class="case-section__container case-content">
       <h2>Overview</h2>
       <p>
-        This process was about migrating data from a legacy system into a new platform, ensuring all partner information lived in one centralized hub.
-      </p>
+        Adobe was migrating partner data from a legacy system into a new centralised platform (PRM) tool used by external 
+        partners across sales, marketing, and account management.
+        Partners needed to complete real tasks on the new platform, and early signs suggested the experience was creating 
+        friction rather than removing it.</p>
+        <p>
+        I was brought in to lead the end-to-end UX research process: scoping the study, 
+        recruiting participants, moderating sessions, analysing findings, and translating those findings into design recommendations 
+        that I then implemented directly.
+        </p>
+
+        <h2>Why Usability Testing</h2>
+        <p>With the platform already in development, there was no time for exploratory research. 
+          I chose remote moderated usability testing because it gave us direct observation of real behaviour. 
+        </p>
+        <p>
+          I designed 8 task-based scenarios drawn from the most common partner workflows, 
+          and defined success criteria.
+          I also included time-on-task measurement and post-test questions to capture both quantitative efficiency data
+          and qualitative confidence signals.
+        </p>  
 
       <h2>Methods</h2>
       <div class="case-tags" aria-label="Research methods used">
@@ -163,23 +182,39 @@
 
       <h3>Results</h3>
       <p>
-        Based on the task scores mentioned previously, an average score was calculated for each task. This average was then used to measure effectiveness (level of success), with 0 representing Failure and 3 representing Complete Success.
+      The Cycle 1 results were clear, and in some cases alarming.
       </p>
       <p>
-        Next, the average time taken per task was calculated (time on task) to further assess effectiveness. In addition, a problem log was created, taking into account all the issues and observations mentioned by the participants.
+      Task 3 had a completion rate of just 16.67% and an average score of 0.5 out of 3. 
+      Participants spent an average of 31 minutes on a task that should have taken under 2. 
+      They were looking for filters that didn't exist, couldn't locate the download button, and expressed visible frustration 
+      throughout. 
       </p>
-
+      <p>
+      Task 1 revealed a different but equally critical issue: two participants independently commented that 
+      there was no save button — "We don't have a save button" and "One confusion here is that there's no save button." 
+      Neither participant was able to complete the task successfully.
+      Across all 8 tasks, only Task 8 performed well at 80% completion. Five of the eight tasks had completion rates at or below 60%.
+      </p>
       <figure class="case-media" aria-label="Results image">
         <img class="case-media__img" src="assets/results_usability.png" alt="Usability testing results summary"/>
       </figure>
 
       <h3>Conclusions</h3>
       <p>
-        For the conclusions, I created a presentation designed in Figma. One section detailed each task, including its description, the average completion time, the completion rate, and the number of participants who required assistance.
+       Based on the findings, I produced a recommendations presentation delivered to Adobe stakeholders — later described 
+       by the client as "the best presentation I've seen." 
+       </p>
+       <p>
+      The recommendations covered three areas, each directly tied to the data:
       </p>
       <p>
-        Specific participant comments related to each task were also included. Additionally, the presentation featured an executive summary and a separate section with recommendations.
+      Labels — Several navigation labels were not matching partner mental models. Participants were navigating to the wrong sections because the terminology reflected internal Adobe language, not partner language. I proposed and implemented clearer, task-oriented labels. <br>
+      Navigation — Participants were taking inconsistent and inefficient paths to complete tasks. The Asset Library structure in particular caused repeated confusion — partners expected a filter for co-brandable vs non-co-brandable assets that simply didn't exist. I restructured the navigation to surface these distinctions clearly. <br>
+      Flows — Task 3 had the longest time-on-task (31 minutes average) because the co-branding flow lacked clear entry points and feedback. I redesigned the flow to reduce steps and add explicit confirmation states.
+      I didn't just recommend these changes — I implemented them, acting as the bridge between the PRM vendor and Adobe's internal team throughout. 
       </p>
+     
 
       <figure class="case-media" aria-label="Usability slides image">
         <div class="case-media__stack" aria-label="Usability slides and executive summary">
@@ -202,31 +237,10 @@
 
       <h2>Outcomes &amp; Impact</h2>
       <p>
-        The usability test was conducted in two cycles, with a second round of five participants after implementing improvements. The outcomes demonstrate significant gains in completion rates, efficiency, and overall platform engagement.
+      Following the implementation of changes, completion rates improved significantly across the tasks that had shown the most critical failures:
+      Task 3 improved from 16.67% → 40%+. Tasks 4 and 7 improved from 40% → 75%+. Task 1 improved from 60% to 80%+. Beyond completion rates, participant behaviour shifted noticeably — confident statements like "I am sure that…" replaced the hesitation and confusion observed in Cycle 1. Partner traffic and conversion rates on the platform increased post-launch.  
+      The most important outcome, however, was structural: research directly drove implementation. Every change made to the platform was traceable back to a specific finding from the usability study.
       </p>
-
-      <h3>Completion Rate Improvements</h3>
-      <ul class="case-metrics">
-        <li><span class="case-metric__label">Task 3</span><span class="case-metric__value">16.7% → 80%+</span></li>
-        <li><span class="case-metric__label">Task 4</span><span class="case-metric__value">40% → 75%+</span></li>
-        <li><span class="case-metric__label">Task 7</span><span class="case-metric__value">40% → 75%+</span></li>
-        <li><span class="case-metric__label">Task 1</span><span class="case-metric__value">+10% increase</span></li>
-        <li><span class="case-metric__label">Task 2</span><span class="case-metric__value">+10% increase</span></li>
-      </ul>
-
-      <h3>Participant Confidence &amp; Behaviour</h3>
-      <ul class="case-list">
-        <li>Noticeable reduction in hesitation during responses in Cycle 2.</li>
-        <li>More confident statements such as “I am sure that…” observed across tasks.</li>
-      </ul>
-
-      <h3>Time on Task</h3>
-      <ul class="case-metrics">
-        <li><span class="case-metric__label">Task 7</span><span class="case-metric__value">reduced by more than 10 seconds</span></li>
-        <li><span class="case-metric__label">Task 8</span><span class="case-metric__value">reduced by more than 10 seconds</span></li>
-        <li><span class="case-metric__label">Other tasks</span><span class="case-metric__value">remained similar to Cycle 1 values</span></li>
-      </ul>
-
       <h3>Platform Engagement &amp; Conversions</h3>
       <ul class="case-list">
         <li>Higher partner traffic observed on the platform after improvements.</li>
