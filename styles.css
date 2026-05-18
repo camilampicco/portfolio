@@ -626,6 +626,12 @@ nav a {
   text-decoration: none;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
 /* =========================
    RESPONSIVE - TABLET / MOBILE
    ========================= */
@@ -673,33 +679,33 @@ nav a {
     margin: 0 auto;
   }
 
-  .case-hero{
+  .case-hero {
     padding: 80px 20px 64px;
   }
 
-  .case-hero__container{
+  .case-hero__container {
     grid-template-columns: 1fr;
     gap: 24px;
   }
 
-  .case-hero__text h1{
+  .case-hero__text h1 {
     font-size: 34px;
   }
 
-  .case-section{
+  .case-section {
     padding: 0 20px 96px;
   }
 
-  .case-content{
+  .case-content {
     max-width: 100%;
   }
 
-  .case-metrics li{
+  .case-metrics li {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .case-metric__value{
+  .case-metric__value {
     text-align: left;
   }
 
@@ -712,7 +718,7 @@ nav a {
     font-size: 36px;
   }
 
-  .tools-grid{
+  .tools-grid {
     max-width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
@@ -722,7 +728,7 @@ nav a {
   }
 
   .tools-section-wrap {
-  padding: 0;
+    padding: 0;
   }
 
   .case-section,
@@ -740,6 +746,77 @@ nav a {
   .nav-dropdown.open .nav-dropdown-toggle::after {
     transform: rotate(180deg);
   }
+
+  /* SKILLS responsive */
+  .skills-section {
+    padding: 40px 20px 80px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skills-container h2 {
+    margin-bottom: 36px;
+  }
+
+  /* disable hover colour on touch devices */
+  .skill-block:nth-child(1):hover,
+  .skill-block:nth-child(2):hover,
+  .skill-block:nth-child(3):hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: none;
+  }
+ .skills-section {
+    padding: 40px 20px 80px;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-tag {
+    white-space: normal; /* allow wrapping on mobile where space is tight */
+  }
+
+  .skill-block:nth-child(1):hover,
+  .skill-block:nth-child(2):hover,
+  .skill-block:nth-child(3):hover {
+    background: rgba(255, 255, 255, 0.95);
+    transform: none;
+  }
+
+.skills-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .skill-block {
+    padding: 20px 16px;
+  }
+
+  .skill-block__label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+  }
+
+  .skill-tag {
+    font-size: 11px;
+    padding: 5px 9px;
+  }
+
+  .skill-tags {
+    gap: 6px;
+  }
+}
+
+
+.skill-block:hover .skill-tag {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
 }
 
 .tools-section-wrap {
@@ -836,4 +913,80 @@ nav a {
 
 .dropdown-menu a + a {
   border-top: 1px solid #f0f0f0;
+}
+
+/* SKILLS SECTION */
+.skills-section {
+  padding: 40px 10% 120px;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+
+.skills-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.skills-container h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.skill-block {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 25px;
+  padding: 28px 24px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  min-width: 0; /* prevents grid blowout */
+}
+
+.skill-block__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #7b7b7b;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  white-space: normal;
+  word-break: break-word;
+  min-width: 0;
+}
+
+.skill-block:nth-child(1):hover { background: #d9a79c; }
+.skill-block:nth-child(2):hover { background: #b7c7b0; }
+.skill-block:nth-child(3):hover { background: #e7dccb; }
+
+.skill-block:hover {
+  transform: translateY(-6px);
+}
+
+.skill-block:hover .skill-block__label {
+  color: #555;
+}
+
+.skill-block:hover .skill-tag {
+  background: rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.4);
 }
