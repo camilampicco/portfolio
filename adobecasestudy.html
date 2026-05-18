@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Adobe UX Research — Camila Picco</title>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
@@ -77,6 +77,9 @@
         <h2>Why Usability Testing</h2>
         <p>With the platform already in development, there was no time for exploratory research. 
           I chose remote moderated usability testing because it gave us direct observation of real behaviour. 
+        </p>
+        <p>
+          I chose moderated over unmoderated testing because the tasks involved complex workflows where observing hesitation, navigation paths, and verbal reactions in real time was more valuable than volume of responses.
         </p>
         <p>
           I designed 8 task-based scenarios drawn from the most common partner workflows, 
@@ -202,17 +205,33 @@
 
       <h3>Conclusions</h3>
       <p>
-       Based on the findings, I produced a recommendations presentation delivered to Adobe stakeholders — later described 
-       by the client as "the best presentation I've seen." 
-       </p>
-       <p>
-      The recommendations covered three areas, each directly tied to the data:
+        Based on the findings, I produced a recommendations presentation delivered to Adobe stakeholders — later described
+        by the client as "the best presentation I've seen."
+      </p>
+      <p>The recommendations covered three areas, each directly tied to the data:</p>
+
+      <h3>Labels</h3>
+      <p>
+        Several navigation labels were not matching partner mental models. Participants were navigating to the wrong 
+        sections because the terminology reflected internal Adobe language, not partner language. I proposed and 
+        implemented clearer, task-oriented labels.
+      </p>
+
+      <h3>Navigation</h3>
+      <p>
+        Participants were taking inconsistent and inefficient paths to complete tasks. The Asset Library structure 
+        caused repeated confusion — partners expected a filter for co-brandable vs non-co-brandable assets that simply 
+        didn't exist. I restructured the navigation to surface these distinctions clearly.
+      </p>
+
+      <h3>Flows</h3>
+      <p>
+        Task 3 had the longest time-on-task (31 minutes average) because the co-branding flow lacked clear entry 
+        points and feedback. I redesigned the flow to reduce steps and add explicit confirmation states.
       </p>
       <p>
-      Labels — Several navigation labels were not matching partner mental models. Participants were navigating to the wrong sections because the terminology reflected internal Adobe language, not partner language. I proposed and implemented clearer, task-oriented labels. <br>
-      Navigation — Participants were taking inconsistent and inefficient paths to complete tasks. The Asset Library structure in particular caused repeated confusion — partners expected a filter for co-brandable vs non-co-brandable assets that simply didn't exist. I restructured the navigation to surface these distinctions clearly. <br>
-      Flows — Task 3 had the longest time-on-task (31 minutes average) because the co-branding flow lacked clear entry points and feedback. I redesigned the flow to reduce steps and add explicit confirmation states.
-      I didn't just recommend these changes — I implemented them, acting as the bridge between the PRM vendor and Adobe's internal team throughout. 
+        I didn't just recommend these changes — I implemented them, acting as the bridge between the PRM vendor 
+        and Adobe's internal team throughout.
       </p>
      
 
@@ -238,9 +257,28 @@
       <h2>Outcomes &amp; Impact</h2>
       <p>
       Following the implementation of changes, completion rates improved significantly across the tasks that had shown the most critical failures:
-      Task 3 improved from 16.67% → 40%+. Tasks 4 and 7 improved from 40% → 75%+. Task 1 improved from 60% to 80%+. Beyond completion rates, participant behaviour shifted noticeably — confident statements like "I am sure that…" replaced the hesitation and confusion observed in Cycle 1. Partner traffic and conversion rates on the platform increased post-launch.  
+      Beyond completion rates, participant behaviour shifted noticeably, confident statements like "I am sure that…" replaced the hesitation and confusion observed in the Usability Test. 
+      Partner traffic and conversion rates on the platform increased post-launch.  
       The most important outcome, however, was structural: research directly drove implementation. Every change made to the platform was traceable back to a specific finding from the usability study.
       </p>
+      <ul class="case-metrics">
+      <li>
+        <span class="case-metric__label">Task 3 completion rate</span>
+        <span class="case-metric__value">16.67% → 40%+</span>
+      </li>
+      <li>
+        <span class="case-metric__label">Tasks 4 & 7 completion rate</span>
+        <span class="case-metric__value">40% → 75%+</span>
+      </li>
+      <li>
+        <span class="case-metric__label">Task 1 completion rate</span>
+        <span class="case-metric__value">60% → 80%+</span>
+      </li>
+      <li>
+        <span class="case-metric__label">Partner traffic post-launch</span>
+        <span class="case-metric__value">↑ Significant increase</span>
+      </li>
+    </ul>
       <h3>Platform Engagement &amp; Conversions</h3>
       <ul class="case-list">
         <li>Higher partner traffic observed on the platform after improvements.</li>
@@ -253,6 +291,17 @@
         <li>Higher confidence and reduced hesitation indicate clearer UI and better guidance.</li>
         <li>Business metrics such as platform traffic and conversions show positive impact beyond usability metrics.</li>
       </ul>
+      <h2>Reflection</h2>
+    <p>
+      This project taught me that the most valuable thing a UX researcher can do is stay close to implementation. 
+      Handing off a report is not enough — findings need to be championed, explained, and defended until they 
+      become real changes in the product.
+    </p>
+    <p>
+      If I were to run this study again, I would have recruited participants earlier in the development cycle 
+      to allow for more structural changes. By the time testing began, some architectural decisions were already 
+      fixed — which meant some recommendations addressed symptoms rather than root causes.
+    </p>
     </div>
   </section>
 </main>
